@@ -1,6 +1,23 @@
-// ** create a grid using .container
+// As a user i want to be able to open up the game and play connect 4
+//  ** create a grid using .grid
+
+// create a function called checkForWin
+
+// create a function called resetGame
+// -> updateMessage
+
+// create a function called updateMessage
+
+// create a function called checkforDraw (draw if all the cells are full on the grid)
+// -> IF there are no free cells then end the game
+
+// create a function called cellClick 
+
+// identifying which cell was clicked: with const placecount
+
+
 //  ** create function of .message this is to show whose turn it is & current game state (win tie etc.)
-//  ** create function called init ( this function will reset the global variables to start position)
+//  ** create function called init (this function will reset the global variables to start position)
 //  ** run init() to clear container and set player turn
 //  ** create variables for players (diamond, ace), container (create an array of 42 empty strings for each square), win & tie
 //  ** create function called render to update container & message
@@ -9,8 +26,8 @@
 //  ** create a function called render() to utilise the functions updateContainer & updateMessage which is called in at the end of handleClick function (render should also be used in the init function!)
 //  
 //  As a user i want to be able to take turns with another player
-//  ** create a function called switchPlayerTurn ()
-//  ** have func switchPlayerTurn run as part of the handleClick event
+//  ** create a function called getPlayerChoice ()
+//  ** have func getPlayerChoice run as part of the handleClick event
 //  As a user i want to be able to clearly see whose turn it is on the screen
 //  ** create functions for updateContainer & updateMessage to clearly see the current game state
 //  ** call on these functions inside the render () function
