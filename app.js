@@ -1,7 +1,7 @@
 // ! As a user i want to be able to open up the game and play connect 4
 //  ** create a grid using .grid
 
-// ? As a user i want to be able to see who's turn it is 
+// ! As a user i want to be able to see who's turn it is 
 
 // * player selected to start 
 //          + needs a variable (spade/diamond)
@@ -10,49 +10,31 @@
 // * Message needs to be displayed to show who's turn it is
 //           + create a function called updateMessage
 
-// ? As a user I want to be able to place a counter on the grid
+// ! As a user I want to be able to place a counter on the grid
 // * clickevent on grid cells
 //              + use event.target.id to target the index thats been clicked
 //              + define a columns array containing arrays of every single column on the board - each oclumn array should contain the indexes of the cells iwthin the column
 //              + find the column array containing the event.target.id
 //              + once the column has been found we want to find the lowest avaialble cell 
 
-// ? As a user I want to be able to play with another player
+// ! As a user I want to be able to play with another player
 //              + create a function called switchPlayer
 
-// ? As a user I want to be able to see if I've won
+// ! As a user I want to be able to see if I've won
 //              + create a function called checkforWin
 //              + if combo is 4 whether it's rows/cols/diags, win
 //              + use the arrays to pick out which 4s are consecutive with the 
 
-// ? As a user I want to be able to see if it's a tie 
+// ! As a user I want to be able to see if it's a tie 
 //              + checkforTie function
 //              + check if i have any counters space left on the grid
 //              + if there are no free cells, then end the game 
 
-// ? As a user I want to be able to reset the game 
+// ! As a user I want to be able to reset the game 
 //              + create a function called resetGame
 //              + here reset the diamond and spade buttons to 0 so make a resetVariables functions and add this in here
 //              + update the display so add this in (updateMessage)
 
-
-
-
-
-
-
-// create a function called checkForWin
-
-// create a function called resetGame
-// -> updateMessage
-
-
-// create a function called checkforDraw (draw if all the cells are full on the grid)
-// -> IF there are no free cells then end the game
-
-// create a function called cellClick 
-
-// identifying which cell was clicked: with const 
 
 
 
@@ -149,6 +131,11 @@ const updateMessage = () => {
 }
 
 
+// ? As a user I want to be able to reset the game 
+//              + create a function called resetGame
+//              + here reset the diamond and spade buttons to 0 so make a resetVariables functions and add this in here
+//              + update the display so add this in (updateMessage)
+
 const resetBoard = () => {
     // remove all counters to reset the board
     squareEls.forEach(el => el.classList.remove('counter', 'diamond', 'spade'))
@@ -161,12 +148,21 @@ const handleClick = (event) => {
     placePiece(index)
     // check first for win
     checkForWinner()
+    // check for draw
     checkForDraw()
-     // check for draw
+    //update the message board
     updateMessage()
     // switch player
     switchPlayer()
 }
+
+
+
+
+// ? As a user I want to be able to see if I've won
+//              + create a function called checkforWin
+//              + if combo is 4 whether it's rows/cols/diags, win
+//              + use the arrays to pick out which 4s are consecutive with the 
 
 const checkForWinner = () => {
     cols.forEach(col => {
@@ -212,13 +208,22 @@ const checkForWinner = () => {
     switchPlayer()
 }
 
+
+
+
+
+// ? As a user I want to be able to see if it's a tie 
+//              + checkforTie function
+//              + check if i have any counters space left on the grid
+//              + if there are no free cells, then end the game 
+
 checkForDraw = () => {
     tie = squareEls.every(el => el.classList.contains('counter') === true)
     updateMessage()
     switchPlayer()
 }
 
-
+// end game once there's a winner
 const endGame = () => {
     winner = true
 }
@@ -238,13 +243,10 @@ const placePiece = (index) => {
 
 
     // * once the column has been found we want to find the lowest avaialble cell 
-    // check each cell in found column to find if there is a class of counter, if there is not, 
-    
-
+    // check each cell in found column to find if there is a class of counter, if there is not, place piece at the bottom of each coloumn
     let lowestFreeCell
     foundColumn.forEach(index => {
         const cell = squareEls[index]
-    
         // adding a class to the cell
         if (cell.classList.contains('counter') === false) {
             lowestFreeCell = cell
@@ -257,6 +259,7 @@ const placePiece = (index) => {
             lowestFreeCell.classList.add('counter', turn) 
         }
 }
+
 
 // ? As a user I want to be able to play with another player
 //              + create a function called switchPlayer
@@ -277,7 +280,7 @@ const resetVariables = () => {
     console.log('')
 }
 
-
+// resetting the game updates each executions
 const resetGame = () => {
     resetVariables()
     resetBoard()
@@ -295,3 +298,4 @@ squareEls.forEach(squareEl => {
 })
 
 reset.addEventListener('click', resetGame)
+
