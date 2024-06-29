@@ -79,7 +79,7 @@ body{
 #result-display{
     height: 70px;
     text-align: center;
-    font: 60px sans-serif;
+    font: 30px "Chicle", serif;
     font-weight: 100;
     padding-top: 1px;
     padding-right: 2px;
@@ -97,6 +97,7 @@ body{
     width: 200px;
     padding: 10px;
     font-family: "Chicle", sans-serif;
+    justify-content: center;
 }
 
 
