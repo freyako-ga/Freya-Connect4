@@ -68,8 +68,6 @@ body{
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: center;
-    /* border-width: 5px;
-    border-style:solid; */
 }
 
 .spade{
@@ -77,14 +75,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    /* border-width: 3px; 
-    border-style:solid; */ 
 }
 
 #result-display{
     height: 10px;
     text-align: center;
-    font: 60px "Chicle", serif;
+    font-size: 60px;
+    font: "Chicle", serif;
     font-weight: 100;
     padding-top: 1px;
     padding-right: 2px;
