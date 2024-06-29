@@ -32,20 +32,3 @@
 
 </html>
 
-
-//Events
-buttonElements.forEach(btn => {
-    btn.addEventListener('click', (playAudio) => {
-    }
-)})
-
-
-//Executions
-function playAudio(evt){
-    console.dir(evt.target.id)
-}
-//adding sound to the audio element
-audio.src = './sounds/${evt.target.id}.wav'
-
-//play sound
-audio.play() 
