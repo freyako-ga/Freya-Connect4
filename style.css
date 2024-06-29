@@ -84,11 +84,7 @@ body{
 #result-display{
     height: 10px;
     text-align: center;
-<<<<<<< HEAD
-    font: 30px "Chicle", serif;
-=======
     font: 60px "Chicle", serif;
->>>>>>> 9c906c63833cba2242a3d0789ad2e97bb2d7a113
     font-weight: 100;
     padding-top: 1px;
     padding-right: 2px;
@@ -107,11 +103,9 @@ body{
     width: 300px;
     padding: 10px;
     font-family: "Chicle", sans-serif;
-<<<<<<< HEAD
     justify-content: center;
-=======
     background-position: center;
->>>>>>> 9c906c63833cba2242a3d0789ad2e97bb2d7a113
+
 }
 
 
