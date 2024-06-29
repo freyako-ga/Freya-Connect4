@@ -6,11 +6,15 @@ h1 {
     text-align: center;
     font-family: "Chicle", serif;
     font-size: 80px;
-    /* font: small-caps bold 40px/1 sans-serif; */
     font-weight: bold;
 }
 
 h2 {
+    text-align: center;
+    font-family: "Chicle", serif;
+}
+
+h3 {
     text-align: center;
     font-family: "Chicle", serif;
 }
@@ -39,9 +43,8 @@ body{
 .grid-wrapper{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
 .grid {
@@ -49,6 +52,8 @@ body{
     width: 500px;
     box-shadow: 0 0 20px 0 black;
     background-color: green;
+    position: relative;
+    top: -60px;
 }
 
 .grid div {
@@ -77,15 +82,16 @@ body{
 }
 
 #result-display{
-    height: 70px;
+    height: 10px;
     text-align: center;
-    font: 60px sans-serif;
+    font: 60px "Chicle", serif;
     font-weight: 100;
     padding-top: 1px;
     padding-right: 2px;
     padding-left: 3px;
     padding-bottom: 4px;
     color: rgb(32 41 36);
+    background-position: center;
 }
 
 #reset{
@@ -94,9 +100,10 @@ body{
     font-weight: 200;
     border-radius: 10px;
     color: rgb(222 234 227);
-    width: 200px;
+    width: 300px;
     padding: 10px;
     font-family: "Chicle", sans-serif;
+    background-position: center;
 }
 
 
@@ -105,3 +112,12 @@ body{
     justify-content: center;
 
 }
+
+.button{
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+
