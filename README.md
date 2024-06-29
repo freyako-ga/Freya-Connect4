@@ -11,7 +11,6 @@ Welcome to CONNECT 4, where diamonds and spades rival on an arcade board. Experi
 
 https://github.com/freyako-ga/Freya-Connect4.git
 
-command+click for link!
 
 # Wireframe link:
 
