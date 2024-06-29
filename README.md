@@ -4,12 +4,18 @@ CONNECT 4
 
 # Description:
 
-Welcome to CONNECT 4, where diamonds and spades rival on an arcade board. Experience this classic game by attempting to connect four of the same counters in a row, whether it's verticall/horizontally/diagonally. 
+Welcome to CONNECT 4, where diamonds and spades rival on an arcade board. Experience this classic game by attempting to connect four of the same counters in a row, whether it's verticall/horizontally/diagonally. I chose this game as it was a childhood favourite of mine - enjoy!
 
 
 # Deployment link:
 
 https://github.com/freyako-ga/Freya-Connect4.git
+
+command+click for link!
+
+# Wireframe link:
+
+https://excalidraw.com/
 
 
 # Getting Started/Code Installation:
